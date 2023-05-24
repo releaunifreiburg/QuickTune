@@ -1,3 +1,7 @@
-# AutoFineTune
+# QuickTune
 
-Download data from https://download.pytorch.org/tutorial/hymenoptera_data.zip and put the "hymenoptera_data" in the folder "data".
+## Download meta-data
+
+## Run optimization
+
+## Execute fine-tuning with selected hyperparameters and model
