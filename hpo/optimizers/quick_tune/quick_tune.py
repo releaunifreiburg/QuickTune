@@ -10,8 +10,8 @@ import numpy as np
 from sklearn.preprocessing import MinMaxScaler
 from scipy.stats import norm, t
 import torch
-from hpo.optimizers.dyhpo.dyhpo import DyHPO, MetaTrainer, FeatureExtractor
-from hpo.optimizers.dyhpo.dyhpo import CostPredictorTrainer, CostPredictor
+from hpo.optimizers.quick_tune.dyhpo import DyHPO, MetaTrainer, FeatureExtractor
+from hpo.optimizers.quick_tune.dyhpo import CostPredictorTrainer, CostPredictor
 from hpo.optimizers.aft_metadataset import AFTMetaDataset
 
 
@@ -1048,7 +1048,7 @@ if __name__ == "__main__":
     parser.add_argument("--meta_learning_rate", type=float, default=0.01)
     parser.add_argument("--train_iter", type=int, default=10000)
     parser.add_argument("--device", type=str, default="cuda")
-    parser.add_argument("--with_scheduler", type=int, default=0)
+    parser.add_argument("--with_scheduler", type=int, default=1)
     parser.add_argument("--include_metafeatures", type=int, default=1)
     parser.add_argument("--acqf_fc", type=str, default="ei")
     parser.add_argument("--explore_factor", type=float, default=0.1)
@@ -1056,7 +1056,7 @@ if __name__ == "__main__":
     parser.add_argument("--meta_test_id", type=str, default="mt0")
     parser.add_argument("--load_meta_trained", type=int, default=0)
     parser.add_argument("--load_cost_predictor", type=int, default=0)
-    parser.add_argument("--output_dim_metafeatures", type=int, default=2)
+    parser.add_argument("--output_dim_metafeatures", type=int, default=4)
     parser.add_argument("--freeze_feature_extractor", type=int, default=0)
     parser.add_argument("--run_random", type=int, default=0)
     parser.add_argument("--meta_train", type=int, default=1)

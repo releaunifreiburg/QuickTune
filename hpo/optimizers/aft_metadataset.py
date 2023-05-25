@@ -16,6 +16,7 @@ NON_CAT_COLS = ['amp', 'batch_size', 'bss_reg', 'cotuning_reg', 'cutmix', 'decay
                 'pct_to_freeze', 'ra_magnitude', 'ra_num_ops', 'random_augment', 'smoothing', 'sp_reg', 'stoch_norm',
                 'trivial_augment', 'warmup_epochs', 'warmup_lr', 'weight_decay', 'max_eval_top1', 'max_eval_top5',
                 'curve_length', 'final_batch_size', 'invalid_loss_value', 'max_memory_allocated', 'clip_grad', 'layer_decay']
+PATH = "data/"
 
 class AFTMetaDataset:
 
@@ -49,7 +50,7 @@ class AFTMetaDataset:
         self.subsample_models_in_hub = subsample_models_in_hub
 
         if path is None:
-            self.path = "/work/dlclarge1/pineda-aft-curves"
+            self.path = PATH
         else:
             self.path = path
 
