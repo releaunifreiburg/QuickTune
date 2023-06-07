@@ -1,7 +1,7 @@
 # QuickTune
 ## Download meta-data
 
-Download QuickTune meta-dataset from [HERE]](https://rewind.tf.uni-freiburg.de/index.php/s/NxeXnnfGeGzFq9f). Move the content to a folder called *agg_curves* inside the *meta_data* folder.
+Download QuickTune meta-dataset from [HERE](https://rewind.tf.uni-freiburg.de/index.php/s/NxeXnnfGeGzFq9f). Move the content to a folder called *agg_curves* inside the *meta_data* folder.
 
 ```
 cd meta_data 
