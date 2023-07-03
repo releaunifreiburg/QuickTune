@@ -13,7 +13,7 @@ unzip QT_metadataset.zip
 
 
 
-## Prepare environment
+## Prepare Environment
 Create environment and install requirements:
 
 `
