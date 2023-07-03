@@ -37,7 +37,8 @@ python finetune.py --model dla46x_c --pct_to_freeze 0.8
 ## Run Quick-Tune on Meta-dataset
 
 ```
-cd hpo/optimizers/quick_tune --experiment_id qt_test
+cd hpo/optimizers/
+python quick_tune --experiment_id qt_test
                              --aft_set micro 
                              --hidden_dim 32 
                              --output_dim 32 
